@@ -1,0 +1,77 @@
+* {
+    font: 24px/1.5em 黑体;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#Container {
+    width: 1006px;
+    margin: 0 auto;
+    /*设置整个容器在浏览器中水平居中*/
+}
+
+#Header {
+    height: 120px;
+    background: #093;
+}
+
+#logo {
+    height: 80px;
+    background: #5f5;
+    border-bottom: 2px solid white;
+}
+
+#nav {
+    height: 40px;
+    background: #3f5;
+    border-bottom: 2px solid white;
+}
+
+#Content {
+    width: 100%;
+    height: 400px;
+    background: #00EEFF;
+}
+
+#Content-left {
+    height: 400px;
+    width: 250px;
+    float: left;
+    background: #66ff66;
+    border-right: 2px solid white;
+}
+
+#Content-center-left {
+    height: 400px;
+    width: 250px;
+    float: left;
+    background: #77ff66;
+    border-right: 2px solid white;
+}
+
+#Content-center-right {
+    height: 400px;
+    width: 250px;
+    float: left;
+    background: #88ffDD;
+    border-right: 2px solid white;
+}
+
+#Content-right {
+    height: 400px;
+    width: 250px;
+    float: left;
+    background: #99ff66;
+}
+
+#Footer {
+    height: 40px;
+    background: #6FC;
+    border-top: 2px solid white;
+}
+
+.Clear {
+    clear: both;
+    margin: 0 auto;
+    padding: 0px;
+}

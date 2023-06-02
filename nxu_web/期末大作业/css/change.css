@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: coral;
+}
+
+.guanggao {
+    width: 100%;
+    height: 200px;
+    background: url(../images/change/bg1.png);
+    background-position: center;
+    color: black;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.guanggao .shouye {
+    font-size: larger;
+    font-weight: bolder;
+    transition: .2s linear;
+    width: 98%;
+}
+
+.guanggao .shouye:hover {
+    color: #48dbfb !important;
+}
+
+.neirong {
+    column-count: 4;
+    margin: 5px;
+    height: 100%;
+}
+
+.neirong .item1 {
+    background: url(../images/change/item_bg.png);
+    height: 200px;
+    margin-bottom: 10px;
+
+}

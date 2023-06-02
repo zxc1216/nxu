@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    /*绝对定位元素*/
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+    /*属性可以被指定为一个或多个 CSS 属性的过渡效果，*/
+}
+  
+.inner-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.navbar .inner-width {
+    display: flex;
+    /*弹性布局*/
+    align-items: center;
+    justify-content: center;
+    /* 均匀排列每个元素，首个元素放置于起点，末尾元素放置于终点 */
+}
+
+.navbar-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+  
+.navbar-menu a:hover {
+    color: #48dbfb !important;
+}
+
+.box{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+.box .left{
+    display: flex;
+    background: url(../images/ranking_list/left6.jpg);
+    float: left;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.box .right{
+    display: flex;
+    background:url(../images/ranking_list/right2.jpg);
+    float: right;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.box .left .girl{
+    font-size: 30px;
+    color: #fff;
+}
+
+.box .left .girl::after {
+    content: "妲己";
+    /*动画属性*/
+    animation: textanim 2s linear infinite;
+    /*无限滚动概念*/
+    /*linear:表示动画从头到尾的速度都是相同的。*/
+}
+  
+@keyframes textanim {
+    10% {
+      content: "西施";
+    }
+  
+    20% {
+      content: "王昭君";
+    }
+  
+    30% {
+      content: "赵飞燕";
+    }
+  
+    40% {
+      content: "貂蝉";
+    }
+  
+    50% {
+      content: "甄宓";
+    }
+  
+    60% {
+      content: "冯小玲";
+    }
+  
+    70% {
+      content: "萧皇后";
+    }
+  
+    80% {
+      content: "杨贵妃";
+    }
+  
+    90% {
+      content: "陈圆圆";
+    }
+  
+    100% {
+      content: "你";
+    }
+}
+
+.box .right .boy{
+    font-size: 30px;
+    color: #fff;
+}

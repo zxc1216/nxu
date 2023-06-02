@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div与表格应用实例——计算器布局</title>
+    <link rel="stylesheet" href="../../../css/daily/back.css">
+    <style type="text/css">
+        #wrap{
+            width:410px;
+            height:450px;
+            background-color:rgb(230,230,130);
+            z-index:0;
+        }
+
+        #result{            
+            height:60px;
+            width:390px;
+            border:solid 1px;   
+            z-index:1;
+            position:absolute;
+            top:80px;
+            left:20px;
+            background-color:white;
+        }
+
+        #op{            
+            height:310px;
+            width:390px;                
+            z-index:1;
+            position:absolute;
+            top:150px;
+            left:20px;
+        }
+
+        td{
+            border:solid 1px black;
+            width:58px;
+            height:40px;
+            margin:10px; 
+            cursor:pointer;  
+        }
+    </style>
+</head>
+<body>
+    <div class="back"><a href="../../daily/Web期末(补充).html">Back</a></div>
+    <div id="wrap">
+        <img src="../../../images/daily/CASIO.png"></img>
+            <div id="result"></div>
+            <div id="op">
+                <table cellspacing="30" border="1">
+                    <tr align="center">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>+</td>
+                    </tr>   
+                    <tr align="center">
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>-</td>
+                    </tr>   
+                    <tr align="center">
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>*</td>
+                    </tr>   
+                    <tr align="center">
+                        <td>0</td>
+                        <td>=</td>
+                        <td>CE</td>
+                        <td>/</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+</html>

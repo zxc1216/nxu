@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单处理事件</title>
+    <link rel="stylesheet" href="../../../css/daily/back.css">
+    <style type="text/css">
+        fieldset {
+            margin: 20px auto;
+            background: #663399;
+            width: 300px;
+            height: 200px;
+            padding: 20px auto;
+            color: white;
+            text-align: center;
+        }
+
+        legend {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .box{
+            margin: 20px auto;
+            background: #663399;
+            width: 330px;
+            height: 230px;
+            padding: 20px auto;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function checklogin() {
+            var username = document.getElementById("myname").value;
+            var pwd = document.getElementById("mypwd").value;
+            if (username == "")
+            {
+                alert("用户名不能为空！！");
+                document.getElementById("myname").focus();
+                return false;
+            }
+            else {
+                if (username.length < 8 || username.length > 20) {
+                    alert("用户名太短，应在8~20个字符之间！！");
+                    document.getElementById("myname").focus();
+                    return false;
+                }
+            }
+            if (pwd == "") 
+            {
+                alert("密码不能为空！！");
+                document.getElementById("mypwd").focus();
+                return false;
+            }
+            else {
+                if (pwd.length < 8 || pwd.length > 20) {
+                    alert("密码太短，应在6~20个字符之间！！");
+                    document.getElementById("mypwd").focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="back"><a href="../../daily/Web期末(补充).html">Back</a></div>
+    <form name="loginform" method="post" action="loginindex.html" onsubmit="return checklogin()">
+        <div class="box">
+            <fieldset>
+                <legend>用户登录</legend>
+                <br><br>
+                <label>用户名</label>
+                <input type="text" name="" id="myname"><br><br>
+                <label>密&nbsp;&nbsp;码</label>
+                <input type="password" name="" id="mypwd"><br><br><br>
+                <input type="submit" value="提交"><input type="reset">
+            </fieldset>
+        </div>
+    </form>
+</body>
+
+</html>

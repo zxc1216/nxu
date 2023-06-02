@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>计算器功能实现</title>
+        <link rel="stylesheet" href="../../css/applets.css"> 
+    <style type="text/css">
+        #sDiv {          
+            text-align: center;
+            border: solid 1px;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            z-index: 999;
+            background: #fff;
+            margin-top: 200px;
+            margin-left: 40%;
+        }
+         
+        #box {
+            border: solid 1px;
+            width: 250px;
+            border-radius: 15px;
+            margin: 10px 0;
+            font-size: 26px;
+            padding: 0 3px;
+        } 
+        input[type=button] {
+            
+            width: 50px;
+            height: 50px;
+            margin: 4px;
+            font-size: 20px;
+        } 
+        #equ {
+            width: 250px;
+            font-size: 26px;
+            padding-bottom: 30px;
+        }
+     </style>
+        </head>   
+    <body>
+        <nav class="navbar">
+            <div class="inner-width">
+                <div class="navbar-menu">
+                    <a href="../../index.html">主页</a>
+                    <a href="../applets.html">小程序</a>
+                    <a href="../../html/change.html">闲置处理</a>
+                    <a href="../../html/love.htm">找对象</a>
+                    <a href="../../html/ranking_list.html">排行榜</a>
+                    <a href="../../html/land.html">登录</a>
+                </div>
+            </div>
+        </nav>
+        <div id="sDiv">
+ 
+            <input type="text" name="box" id="box" value="" /><br/>
+            <input type="button" name="" id="" value="1" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="2" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="3" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="4" onclick="calCulate(this.value)" /><br />
+            <input type="button" name="" id="" value="5" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="6" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="7" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="8" onclick="calCulate(this.value)" /><br />
+            <input type="button" name="" id="" value="9" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="0" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="." onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="C" onclick="s(' ' )" /><br/>
+            <input type="button" name="" id="" value="+" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="-" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="*" onclick="calCulate(this.value)" />
+            <input type="button" name="" id="" value="/" onclick="calCulate(this.value)" /><br/>
+            <input type="button" name="" id="equ" value="=" onclick="e(this.value)" />
+        </div>
+        <script>
+            input = document.getElementById('box');
+ 
+            function s(v) {
+                input.value = v
+            }
+ 
+            function calCulate(v) {
+                input.value += v
+            }
+ 
+            function e() {
+                try {
+                    s(eval(input.value))
+                } catch (e) {
+                    s('Error')
+                }
+            }
+ 
+ 
+            function operator(type) {
+                switch (type) {
+                    case "backspace":
+                        var str = input.value;
+                        //str = (str != "0") ? str : "";
+                        str = str.substr(0, str.length - 1);
+                        str = (str != "") ? str : "0";
+                        input.value = str;
+                        break;
+                    case "opposite":
+                        input.value = -input.value;
+                        break;
+                    case "percent":
+                        input.value = input.value / 100;
+                        break;
+                    case "pow":
+                        input.value = Math.pow(input.value, 2);
+                        break;
+                    case "sqrt":
+                        input.value = Math.sqrt(input.value);
+                        break;
+                }
+            }
+        </script>
+    </body>
+ 
+</html>

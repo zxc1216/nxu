@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /*文本修饰线外观*/
+  box-sizing: border-box;
+  /*告诉浏览器：你想要设置的边框和内边距的值是包含在 width 内的。*/
+}
+
+.navbar {
+  position: fixed;
+  /*绝对定位元素*/
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+  /*属性可以被指定为一个或多个 CSS 属性的过渡效果，*/
+}
+
+.inner-width {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .inner-width {
+  display: flex;
+  /*弹性布局*/
+  align-items: center;
+  justify-content: space-between;
+  /* 均匀排列每个元素，首个元素放置于起点，末尾元素放置于终点 */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/black-logo.png);
+  background-size: contain;
+  /*设置背景图片大小，缩放背景图片以完全装入背景区*/
+}
+
+.navbar-menu a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover {
+  color: #48dbfb !important;
+}
+
+
+#home {
+  height: 100vh;
+  /*“100vh”是指大小为“100”单位为“vh”的一个相对长度值*/
+  min-height: 500px;
+  background: url(../images/bg1.jpg) no-repeat center;
+  /*'no-repeat'你的背景图将不会被重复*/
+  background-size: cover;
+  /*缩放背景图片以完全覆盖背景区，*/
+  background-attachment: fixed;
+  /*此关键属性值表示背景相对于视口固定。即使一个元素拥有滚动机制，背景也不会随着元素的内容滚动。*/
+}
+
+#home .inner-width {
+  display: flex;
+  align-items: center;
+  /*元素在侧轴居中。如果元素在侧轴上的高度高于其容器，那么在两个方向上溢出距离相同。*/
+  justify-content: center;
+  /*伸缩元素向每行中点排列。每行第一个元素到行首的距离将与每行最后一个元素到行尾的距离相同。*/
+  height: 100%;
+  text-align: center;
+}
+
+#home .content {
+  width: 100%;
+  color: #fff;
+}
+
+#home .content h1 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+#home .content h1::after {
+  content: "宁大学子";
+  /*动画属性*/
+  animation: textanim 2s linear infinite;
+  /*无限滚动概念*/
+  /*linear:表示动画从头到尾的速度都是相同的。*/
+}
+
+@keyframes textanim {
+  10% {
+    content: "小哥哥";
+  }
+
+  20% {
+    content: "小姐姐";
+  }
+
+  30% {
+    content: "小仙女";
+  }
+
+  40% {
+    content: "你真好看！";
+  }
+
+  50% {
+    content: "你好帅气";
+  }
+
+  60% {
+    content: "你今天看上去很棒";
+  }
+
+  70% {
+    content: "你好可爱";
+  }
+
+  80% {
+    content: "今天的你充满活力";
+  }
+
+  90% {
+    content: "你很有气质";
+  }
+
+  100% {
+    content: "优秀的你";
+  }
+}
+
+#home .buttons {
+  margin-top: 60px;
+}
+
+#home .buttons a {
+  display: inline-block;
+  /*允许在元素上设置宽度和高度*/
+  margin: 15px 30px;
+  color: #48dbfb;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #48dbfb;
+  /*一个用于设置各种单独的边界属性的简写属性*/
+  padding: 14px 0;
+  border-radius: 6px;
+  /*允许你设置元素的外边框圆角*/
+  transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2)
+
+/*规定属于其父元素的第二个子元素的每个 p 的背景色规定属于其父元素的第二个子元素的每个 p 的背景色*/
+  {
+  background-color: #48dbfb;
+  color: #fff;
+}

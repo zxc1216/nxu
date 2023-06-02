@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>应聘页面</title>
+  <link rel="stylesheet" href="../../../css/daily/back.css">
+  <style>
+    .box {
+      max-width: 20rem;
+      text-align: center;
+      line-height: 1.5rem;
+      display: inline-block;
+      border: 2px solid gray;
+      padding: 3px;
+    }
+
+    .li-item {
+      text-align: left;
+    }
+
+    .adivgn-left {
+      text-align: left;
+    }
+
+    button {
+      margin: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <strong>希望工作地点：</strong>
+    <select name="" id="">
+        <option value="beijin">北京</option>
+    </select>
+    <strong>月薪要求：</strong><input type="text">
+    <input type="checkbox" name="auto" value="false">要求提供过渡住房<br />
+    <strong>请选择应聘行业：</strong><br />
+    <div class="box">
+      <div class="li-item" id="0">计算机软件</div>
+      <div class="li-item" id="1">计算机硬件</div>
+      <div class="li-item" id="2">计算机服务</div>
+      <div class="li-item" id="3">通信/电信/网络设备</div>
+      <div class="li-item" id="4">互联网/电子商务</div>
+      <div class="li-item" id="5">网络游戏</div>
+      <div class="li-item" id="6">电子技术/半导体/集成电路</div>
+      <div class="li-item" id="7">仪器仪表/工业自动化</div>
+    </div>
+    <button>提交</button><button>重置</button>
+  </form>
+  <div class="back"><a href="../../daily/Web期末(补充).html">Back</a></div>
+
+  <script>
+    let items = document.getElementsByClassName('li-item')
+    items[0].style.backgroundColor = '#1E9FFF'
+    for (let i = 0; i < items.length; i++) {
+      items[i].onclick = function () {
+        for (let i = 0; i < items.length; i++) {
+          items[i].style.backgroundColor = '#FFFFFF'
+        }
+        items[i].style.backgroundColor = '#1E9FFF'
+      }
+    }
+  </script>
+</body>
+
+</html>

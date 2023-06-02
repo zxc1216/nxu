@@ -1,0 +1,33 @@
+.myinput {
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    color: #000000;
+    display: inline;
+    position: relative;
+    top: 200px;
+    left: 600px;
+}
+
+.myinput .shurukuang{
+    border: solid 2px #000000; 
+    background:#fff;
+    border-radius: 5px;
+    display: inline;
+    width: 50%;
+    height: 30px;
+}
+
+.myinput .btn{
+    position:relative;
+    top: 50px;
+    left: 150px;
+    width: 25%;
+    height: 60px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.myinput .btn:hover{
+    background: rgb(89, 255, 0);;
+}

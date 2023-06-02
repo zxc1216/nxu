@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示列表项的内容</title>
+    <link rel="stylesheet" href="../../../css/daily/back.css">
+    <script type="text/javascript">
+        function disaplayItem() {
+            var strInfo = ""  
+            var indexvalue = myform.mysel.selectedIndex;
+            strInfo = "教材名称：" + myform.mysel.options[indexvalue].text + "\n定价：";
+            strInfo += myform.mysel.options[indexvalue].value;
+            alert(strInfo);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="back"><a href="../../daily/Web期末(补充).html">Back</a></div>
+    <h3>显示列表项的内容</h3>
+    <form name="myform" method="post" action="">
+        <select name="mysel" size="5" onchange="disaplayItem()">
+            <option value="35元" selected>计算机组成原理
+            <option value="38元">数据结构
+            <option value="43元">计算机网络
+            <option value="40元">Java程序设计
+            <option value="28元">算法分析
+        </select>
+    </form>
+</body>
+
+</html>

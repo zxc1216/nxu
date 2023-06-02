@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.choujiang{
+    position: relative;
+    top: 25%;
+    right: 5%;
+}
+
+#box {
+    display: flex;
+    padding: 0 450px;
+}
+
+#box span {
+    flex: 1;
+    display: flex;
+    border: red solid 1px;
+    width: 200px; ;
+    height: 100px;
+    background-color: #4AB0F5;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+#box span:hover{
+    background-color: aqua;
+    color: #fff;
+}
+
+#button {
+    padding: 20px 450px;
+}
+
+#button button {
+    width: 80px;
+    height: 50px;
+    background-color: rosybrown;
+    font-size: 20px;
+    border: #B8860B solid 1px;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: relative;
+    left: 38%;
+}
+
+#button button:hover{
+    background-color: #4AB0F5;
+    color:#fff;
+}

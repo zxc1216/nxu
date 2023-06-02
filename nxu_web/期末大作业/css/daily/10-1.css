@@ -1,0 +1,114 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    float: left;
+    margin: 45px auto;
+    padding-left: 50px;
+}
+
+p {
+    margin: 2px;
+    font-size: 14px;
+}
+
+#Container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#Header {
+    height: 118px;
+    border-bottom: 5px;
+    background-color: rgb(230, 230, 230);
+    border-bottom: 5px solid #FFFFFF;
+}
+
+#PageBody {
+    height: 380px;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+#SideBar {
+    float: left;
+    width: 200px;
+    height: 380px;
+    background: #55A0FF;
+    text-align: center;
+    padding: 50px auto;
+    border-right: 5px solid #FFFFFF;
+}
+
+#MainBody {
+    float: right;
+    width: 695px;
+    height: 380px;
+    background: #55A0FF;
+}
+
+#Footer {
+    height: 60px;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+#Header img {
+    float: left;
+}
+
+span {
+    margin-top: 45px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    padding: 45px 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a {
+    width: 48px;
+    height: 24px;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 35px;
+    text-align: center;
+}
+
+li {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px 35px;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    background: #FFFFFF;
+    padding: 6px auto;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    border-bottom: 2px solid #FF0000;
+    background: #55A0FF;
+    color: #FFFFFF;
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Times New Roman;
+}
+
+body {
+    width: 100%;
+    height: 100vh
+}
+
+#nav {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    
+}
+
+#picture {
+    width: 100%;
+    height: 337px;
+    background: url("../images/daily/bg1.png");
+}
+
+#main {
+    width: 100%;
+    height:335px;
+    background: #EEFFDD;
+}
+
+#left {
+    width: 25%;
+    height: 335px;
+    background: #EEFFDD;
+    float: left;
+}
+
+#center {
+    width: 50%;
+    height: auto;
+    float: left;
+    background: #efd;
+}
+
+#right {
+    width: 25%;
+    height: 335px;
+    float: right;
+    background: #efd;
+}
+
+table {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #000;
+}
+
+#nav{
+    background: #828282;
+}
+
+#nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav td {
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#line {
+    margin: 0;
+    padding: 0;
+    background:#48fb6f no-repeat right center;
+}
+
+ul {
+    list-style: none;
+    margin-left: 10px;
+    line-height: 1.8em;
+}
+
+
+#left li {
+    border-bottom: 1px dotted #090;
+}
+
+#lefe a:hover {
+    color: #bf0000;
+    text-decoration: underline;
+}

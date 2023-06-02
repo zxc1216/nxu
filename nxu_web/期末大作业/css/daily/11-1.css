@@ -1,0 +1,29 @@
+table{
+    border: 8px;
+    border-style:double;
+    border-color: #00f;
+}
+
+td{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+#waibiao{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#waibiao .wr{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #ffffee;
+}
+
+#waibiao .wl{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fefefe;
+}

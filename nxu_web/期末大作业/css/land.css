@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    opacity: 0.8;
+    /*opacity 属性指定了一个元素的不透明度*/
+    display: flex;
+    flex-direction: column;
+    /*flex 容器的主轴和块轴相同。主轴起点与主轴终点和书写模式的前后点相同*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*不论元素没有内容，该元素都会被撑开与屏幕高度一致*/
+    background: url(../images/land_bg2.jpg);
+    background-size: cover;
+
+}
+
+.box {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    /*为一个元素后面区域添加模糊*/
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.box h2 {
+    color:black;
+    margin-bottom: 20px;
+}
+
+.box .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.box .input-box label {
+    margin-bottom: 5px;
+    color:black;
+    font-size: 13px;
+    font-weight:bolder;
+}
+
+.box .input-box input {
+    box-sizing: border-box;
+    /*告诉浏览器：你想要设置的边框和内边距的值是包含在 width 内的。*/
+    color: black;
+    font-size: 14px;
+    height: 35px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    /*设置文本字符的间距表现*/
+}
+
+.box .input-box input:focus {
+    border: 1px solid black;
+}
+
+.box .btn-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box .btn-box a {
+    font-size: 13px;
+    width: 250px;
+    text-align: end;
+    text-decoration: none;
+    color:white;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.box .btn-box a:hover {
+    color:black;
+
+}
+
+.box .btn-box div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.box .btn-box div a {
+    text-align: center;
+    font-weight: bold;
+    width: 115px;
+    border: 1px solid black;
+    background: rgba(179, 58, 197, 0.5);
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+    padding: 15px 0;
+}
+
+.box .btn-box div a:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+.box .btn-box div a:hover {
+    border: 1px solid black;
+    background: #48dbfb;
+}

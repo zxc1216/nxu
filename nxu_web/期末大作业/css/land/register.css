@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+body{
+    display:flex;
+    opacity: 0.8;
+    flex-direction: column;
+    /*flex 容器的主轴和块轴相同。主轴起点与主轴终点和书写模式的前后点相同*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../../images/land_bg4.jpg);
+    background-size: cover;
+}
+
+.box{
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    width: 360px;
+    backdrop-filter:blur(10px);
+}
+
+.box h2{
+    color:black;
+    margin-bottom: 30px;
+}
+
+.box .input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom: 10px;
+}
+
+.box .input-box label{
+    color: #000;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.box .input-box input{
+    box-sizing: border-box;
+    color: #000;
+    font-size: 14px;
+    height: 35px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+.box .input-box input:focus{
+    border: 1px solid black;
+}
+
+.box .btn-box{
+    display: flex;
+    width: 250px;
+    justify-content: center;
+}
+
+.box .btn-box  a input{
+    font-size: 20px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    font-weight: bold;
+    background: rgba(179,58,197,0.5);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s;
+    padding: 10px 0;
+}
+
+.box .btn-box a input:hover{
+    color: #000;
+    border: 1px solid #000;
+    background: #48dbfb;
+}
+
