@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <TableLayout
+        android:id="@+id/SELECT_ACTIVITY_TableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:textSize="9pt"
+                android:text="学号" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="9pt"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="-10dp"
+                android:textSize="9pt"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="9pt"
+                android:text="专业" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="-2dp"
+                android:textSize="9pt"
+                android:text="年级" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

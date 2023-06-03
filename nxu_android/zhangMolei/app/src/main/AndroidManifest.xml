@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.zhangmolei.zhangmolei"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ZhangMolei"
+        android:name=".map.zhangMolei_Mdemo">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Delete"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Insert"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Select"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Set"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Bgm"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Sql"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Map"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ui.zhangMolei_Choujiang"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".NDK.zhangMoleiNDK"
+            android:label="@string/app_name">
+        </activity>
+
+        <service
+            android:name=".service.zhangMoleiMusic"
+            android:enabled="true">
+        </service>
+
+        <service
+            android:name=".service.zhangMoleiRandom">
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4qrSt2BAsoUYV5tYcLYbudIiSlOIsKB9" />
+
+        <receiver android:name=".widget.zhangMoleiWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/zml_widget_template"/>
+        </receiver>
+
+    </application>
+
+</manifest>

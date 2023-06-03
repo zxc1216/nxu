@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="张氏学生信息管理系统"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textSize="18pt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/m_insert"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:text="录入信息" />
+
+        <Button
+            android:id="@+id/m_delete"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:text="删除信息" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/m_set"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:text="修改信息" />
+
+        <Button
+            android:id="@+id/m_select"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:text="查找信息" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/m_sql"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:text="使用SQLite数据库操作" />
+    <Button
+        android:id="@+id/m_ndk"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:text="使用NDK对数据进行加密" />
+    <Button
+        android:id="@+id/m_bgm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:text="后台播放音乐" />
+    <Button
+        android:id="@+id/m_map"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:text="校区地址" />
+
+    <Button
+        android:id="@+id/m_choujiang"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:text="抽奖福利" />
+
+</LinearLayout>
